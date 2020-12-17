@@ -23,7 +23,7 @@ const Login = () => {
         const { displayName, email } = result.user;
         const signedInUser = { name: displayName, email }
         setLoggedInUser(signedInUser);
-        // storeAuthToken();
+        storeAuthToken();
       }).catch(function (error) {
         const errorMessage = error.message;
         console.log(errorMessage);
